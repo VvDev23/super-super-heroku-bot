@@ -11,5 +11,22 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!Help') {
+    	message.reply('How Can I Help You');
+        }
+    });
+
+client.on('message', message => {
+    if (message.content === '!cmds') {
+    	message.reply('@everyone Cmds are Ban,Kick,');
+  	}
+    });
+
+client.on('message', message => {
+    if (message.content === '!Ban') {
+    	message.reply('Player has been banned');
+  	}
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+ 
